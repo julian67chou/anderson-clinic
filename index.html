@@ -42,6 +42,14 @@
             <img src="assets/img/logo.png" alt="安生診所">
           </a>
         </div>
+        
+        <div class="me_tp_features">
+          <div class="tp_links">
+            <a target="_blank" class="me_tp_line" href="https://line.me/ti/p/~@andersonclinic"><span class="icon-line">💬</span></a>
+            <a target="_blank" class="me_tp_call" href="tel:03-3270292"><span class="icon-phone">📞</span></a>
+            <a target="_blank" class="me_tp_mail" href="mailto:mkt@anderson.doctor"><span class="icon-mail">✉</span></a>
+          </div>
+        </div>
         <div class="stellarnav">
           <ul>
             <li>
@@ -269,6 +277,16 @@
 
 </div><!-- #content_main -->
 
+<!-- 回到頂端 -->
+<a id="to_top" class="to_top" href="#"><i class="top-icon">↑</i>TOP</a>
+
+<!-- 手機底部選單 -->
+<ul id="bottom_menu" class="clearfix with_shopping_mode">
+  <li><a href="index.html"><span class="icon-home">🏠</span><em>回首頁</em></a></li>
+  <li><a href="tel:03-3270292"><span class="icon-phone">📞</span><em>電話</em></a></li>
+  <li><a href="https://line.me/ti/p/~@andersonclinic"><span class="icon-line">💬</span><em>LINE</em></a></li>
+</ul>
+
 <!-- ===== FOOTER ===== -->
 <footer class="footer with_shopping_mode">
   <div class="center">
@@ -324,6 +342,29 @@ $(function(){
     effect: 'fade',
     pagination: '.swiper-pagination',
     paginationClickable: true
+  });
+  
+  // 回到頂端按鈕
+  var $top = $('#to_top');
+  $(window).on('scroll', function(){
+    if($(this).scrollTop() > 400) $top.addClass('show');
+    else $top.removeClass('show');
+  });
+  $top.on('click', function(e){
+    e.preventDefault();
+    $('html, body').animate({scrollTop: 0}, 600);
+  });
+  
+  // 漢堡選單（行動版）
+  var $nav = $('.stellarnav');
+  var $toggle = $('<button class="nav-toggle">☰</button>');
+  $('.nav-header').append($toggle);
+  $toggle.on('click', function(){
+    $nav.slideToggle(300);
+    $(this).text($nav.is(':visible') ? '✕' : '☰');
+  });
+  $(window).on('resize', function(){
+    if($(window).width() > 968) $nav.show();
   });
 });
 </script>
