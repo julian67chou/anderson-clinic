@@ -1,0 +1,992 @@
+@charset "utf-8";
+/*安生*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200&display=swap');
+
+
+
+/*大圖/＝＝＝＝＝*/
+/*預設解除背景輪播*/
+#content_main { margin:0;}
+.bannerindex { position:static; height:auto;}
+.swiper-banner { position:static; margin:0; height:auto;}
+.swiper-slide img { height:auto;}
+@media screen and (max-width: 768px) {
+.bannerindex { padding:0; margin:0;}
+}
+
+
+/*選單設定*/
+.pageIndex .header_area {
+    position: fixed;
+    width: 100%;
+}
+.main_header_area {
+    background: #ffffff;
+    height: 80px;
+}
+
+.header_area.sticky >.main_header_area{
+	 height: 65px;
+	  background: #ffffff;
+}
+
+.header_area .main_header_area:before {
+    content: "";
+    width: 0;
+    height: 2px;
+    display: block;
+    background:#8ec21f;
+    transition: all 1s ease-in-out;
+}
+	
+.header_area.sticky .main_header_area:before {    width: 100%;    transition: all 1s ease-in-out;}
+
+.header_area .main_header_area .container {
+    max-width: 90%;
+    margin: auto;
+    transition: all 0.3s ease;
+}
+.header_area.sticky .main_header_area .container {
+	 max-width: 85%;
+}
+
+.header_area.sticky{
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+
+
+/*Logo/＝＝＝＝＝*/
+.nav-brand {
+    width: 100%;
+    max-width: 200px;
+}
+.header_area.sticky .nav-brand{
+	width: 100%;
+	max-width: 170px;
+	transition: all .5s;
+	margin-top: 8px;
+}
+/*LOGO 旋轉
+.nav-brand:hover{
+	transform: rotate(10deg);
+}*/
+
+.header_area .nav-brand {
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+
+
+.navigation {    
+	padding: 9px 0 10px 210px;
+}
+
+
+.stellarnav ul{
+	margin: 1% auto;
+}
+.header_area.sticky .stellarnav ul {
+    margin: 0 auto;
+}
+.stellarnav > ul > li > a{
+	transition:all 0.3s;
+	color: #3F3F3F;
+	letter-spacing: 2px;
+	font-family: 'Noto Sans TC', sans-serif;
+}
+
+.stellarnav > ul > li:hover > a{
+	color: #88b727;
+	
+}
+
+
+/*隱藏按鈕
+.stellarnav > ul > li:nth-child(8){
+	display:none;
+}*/
+/*第二層*/
+.stellarnav li li > a , .stellarnav li li.has-sub > a{font-size: 15px; padding: 7px 5px;transition: all 0.3s;border-left:3px solid transparent;}
+.stellarnav li li:hover > a , .stellarnav li li.has-sub:hover > a{color: #3d8e4d;padding-left:10px;border-color:#8ec21f;}
+
+
+.me_tp_features{ display:none;}
+
+/*SubMenu*/
+.shop_search_btn {    background: #ADA17E;}
+.tp_links a{transition:all 0.3s;}
+.tp_links a:hover {    color: #ADA17E;}
+
+
+.stellarnav li.has-sub > a:after{border-top:6px solid #88b727;}
+
+/*隱藏購物車搜尋欄*//*
+.box_search{display:none;}
+/*隱藏購物車*//*
+.me_tp_features a.tp_btn_cart {display: none;}
+/*隱藏匯款通知*//*
+.me_tp_features a.tp_btn_notice{display: none;}
+/*隱藏選單按鈕連結*//*
+.tp_links{display: none;}
+
+
+
+
+
+/*版面*/
+.pageIndex .edit_part ,.product_info_page .main_part{ max-width: 100%; padding: 0 0;}
+.share_page .main_part{ max-width: 100%; padding: 0 0;}
+.blog_page .main_part,.blog_in_page .main_part{ max-width: 75%;padding: 0 20px 50px 20px;}
+.other_select_page .main_part {max-width: 100%;padding: 0 0;} 
+.pageIndex  #content_main,.contact_page #content{
+    background-image: url(https://pic03.eapple.com.tw/anderson/index-bk.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+
+
+
+/*Footer/＝＝＝＝＝*/
+/*.footer_menu a:nth-child(8){ display:none;}*/
+.footer{background: #28823c;}
+.footer_info {display: flex;    flex-wrap: wrap;    align-items: center;    justify-content: space-between;}
+.footer_menu {display: grid;    grid-template-columns: repeat(auto-fit, minmax(min(80px,100%), 1fr));    gap: 5px;}/*footer按鈕最小寬度80px*/
+.footer_info li p{color: #ffffff;}
+.footer_info li p a{color: #ffffff;}
+.footer_menu a {margin: 0;	text-align: center;	padding: 5px;	transition: all 0.3s;    background: transparent;    color: #ffffff;    border: none;}
+.footer_menu a:hover {background:#a6cc4d8c;color: #fff;}
+.copy {  color: #ffffff;border:none;}
+.copy a{ color: #ffffff;transition:all 0.3s;}
+.box_link a{transition:all 0.3s;}
+.box_link a:hover {background: #8ec21f;color: #fff;}
+.fa-whatsapp:before,.fa-envelope::before{color: #fff;} 
+.footer_info li:nth-child(2){border-top: 1px solid #64bb77;}
+.footer_logo img{filter: brightness(100);}
+
+
+
+/*按鈕/＝＝＝＝＝*/
+.animated-arrow { background: #4C7D5D;}
+
+
+
+
+/*Banner/＝＝＝＝＝*/
+.banner{
+	background-image: url(https://pic03.eapple.com.tw/anderson/all-banner.jpg);
+    background-repeat: no-repeat;
+    height: 333px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	flex-direction: column;
+	padding: 0 0;
+}
+.banner h5 {
+    font-family: 'Noto Serif TC', serif;
+    font-size: 38px;
+    font-weight: 600;
+    color: #4d4d4d;
+    letter-spacing: 5px;
+    position: relative;
+    display: inline-block;
+}
+.banner h5::before {
+    content: "";
+    width: 63px;
+    height: 63px;
+    position: absolute;
+    background: url(https://pic03.eapple.com.tw/anderson/banner-icon.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    top: -75%;
+    left: 32%;
+}
+.banner h5::after {
+    content: "專業、細心、照護";
+    font-family: 'Cinzel', serif;
+    font-size: 17px;
+    color: #277F39;
+    font-weight: 700;
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*Page/＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+/*麵包屑＝＝*/
+.path{width: 100%;background: #fff;}
+.path p{width: 100%; max-width:80%;margin: 0 auto;font-size: 17px;}
+.path p a:hover {color: #28823c;font-size: 19px;}
+.path p a{width: 100%;margin: 0 auto;font-size: 17px;}
+.promotions_page .path{ display:none;}
+/*頁碼＝＝*/
+.page { line-height: 250%; background-color: #f7fcf6; width: 100%;    margin: 0 auto;    display: flex;    flex-wrap: wrap;    justify-content: center;    align-items: center;}
+.page li {    display: flex;      margin: 0 6px 2% 6px; width: 30px;    height: 30px;    line-height:30px;    align-items: center;    justify-content: center;}
+.page li a {    display: block;    width: inherit;    height: inherit;    line-height: inherit;    padding: 0;    transition:all 0.3s;}
+.page strong, .page a:hover {background: #a3c25f;border: 1px solid #a3c25f;}
+
+/*首頁促銷*/
+.news_list ul li span{font-size: 18px;}
+.news_list ul li p{font-size: 18px;}
+
+
+/*促銷方案*/
+.news_part .title_i_box{display: flex;flex-direction: column;}
+.news_part .title_i_box h4{font-family: 'Noto Serif TC', serif; font-size: 38px;font-weight: 600;color: #4d4d4d; letter-spacing: 5px;order: 1;}
+.news_part .title_i_box h6 { font-size: 22px; color: #267F39;letter-spacing: 2px;order: 2;}
+.promotions_page .main_part{max-width: 100%; padding:0 0;}
+.promotions_page .other_promotion li a{
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+	background: #ffffff;
+	border: none;
+}
+.promotion_title span{width: 100%;}
+.promotions_page .other_promotion .pmtTitle h3 {
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 20px;
+    bottom: 30px;
+    position: absolute;
+    font-weight: 100;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+    margin: 10px 0 0 0;
+    line-height: 1.5;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+	width:85%;
+}
+
+.promotions_page .other_promotion li a:before {
+    content: url(https://pic03.eapple.com.tw/anderson/new-icon-l.png);
+    border: none;
+    left: 45%;
+    top: 15%;
+}
+.promotions_page .show_content{
+	width: 100%;
+    max-width: 100%;
+	padding: 0 ;
+}
+
+   
+    
+/*下拉頁面*/ 
+.other_select_page span {
+    display: none;
+}
+.other_select_page .other_promotion .pmtTitle h3 {
+    height: 55px;
+    text-align: center;
+    font-family: 'Noto Serif TC', serif;
+    font-size: 20px;
+    bottom: 0;
+    position: absolute;
+} 
+.other_select_page .edit{
+	background-image: url(https://pic03.eapple.com.tw/anderson/service-bk.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+	
+}
+.other_select_page .n-center{
+	max-width: 60%;
+	margin: 0 auto;
+}
+.other_select_page  .show_content{padding: 0 0;}
+
+.other_select_page  .promotion_title span { background: #dae7d0; color: #28823c;margin: 0 2% 0 0;}
+
+.other_select_page .promotion_title :before {
+    content: "";
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    background: url(https://pic03.eapple.com.tw/anderson/ser-icon1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: oxxo;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate-reverse;
+	animation-duration: 0.8s;
+    left: 16%;
+    top:0%;
+}
+@keyframes oxxo{
+		0% {
+   			transform: translateY(5px);
+		}
+		100% {
+   			transform: translateY(13px);
+		}
+	}
+
+
+.other_select_page .promotion_title h2{font-family: 'Noto Serif TC', serif;width: 100%;font-size: 32px;letter-spacing: 3px;}
+.other_select_page .clearfix { padding: 3% 0;margin: 0 auto; width: 100%;     max-width: 100%;display: flex;    justify-content: center;background: #f7fcf6;align-items: center;    flex-wrap: wrap;}
+.other_select_page .promotion_title { max-width: 63%; margin: 0 auto;}
+.other_select_page .promotion_title *{font-size: 18px;}
+.other_select_page .other_promotion li{width: 27%;}
+.other_select_page .pmtTitle {
+    position: relative;
+    width: 100%;
+    height: 136px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.other_select_page .other_promotion li a:before {
+    content: url(https://pic03.eapple.com.tw/anderson/function-icon-l.png);
+    border: none;
+    left: 45%;
+    top: 15%;
+}
+.other_select_page .other_promotion li a:after{
+	
+	border: none;
+}
+.other_select_page .other_promotion li a{    background: #ffffff;    border: none;}
+.other_select_page .other_promotion li a:hover{ background: #f0f5e5; }
+.other_select_page .n-photo img{ width:100%;}
+
+
+
+
+/*購物車/＝＝＝＝＝*/
+.prod_part {    width: 90%;}
+.products-list {    display: grid;    gap: 10px;    grid-template-columns: 1fr 1fr 1fr 1fr;}
+.products-list:before{content:none;}
+.products-list .item {    width: 100%;}
+.products-list .name{text-align: center;font-size: 17px;}
+
+
+
+/*購物車/外層＝＝*/
+/*顏色*/
+.products-list .more {
+    border: 1px solid #8DC270;
+    border-radius: 7px;
+    color: #414141;
+}
+.products-list .item a:hover .more {
+    background: #8DC270;
+    border-color:#8DC270;
+    color: #424242;
+}
+
+
+
+/*價格*/
+.products-list .price {    display: flex;    margin-bottom: 5px;    align-items: center;    justify-content: center;    flex-wrap: wrap;}
+.products-list .price b {    margin: 0 5px;    line-height: 180%;    text-align: center;color: #ADA17E;}
+.products-list .price b.ori_price {    font-size: 14px;}
+
+/*外層版面*/
+.product_page .main_part {    width: 90%;	max-width: 1500px;padding: 0;}
+.product_page .show_content {    display: flex;    flex-wrap: wrap;    align-items: flex-start;    justify-content: space-between;}
+
+.product_page .products-list {    width: calc(100% - 280px);}
+.product-layer-two {    width: 250px;    margin: 0;}
+.product_info_page .product-layer-two {    display: none;}
+.product-layer-two li {    margin: 0;    width: 100%;padding: 0 10px;}
+.product-layer-two > li.active {    background: #f2f2f2;}
+.product-layer-two li.active a {    border: unset;border-bottom: 1px dotted #ccc;}
+/**/
+.product-layer-two li a {    color: #222;    border: none;    background: transparent;    transition: all 0.3s;    line-height: 200%;    transition: all 0.3s;}
+.product-layer-two > li > a {    border-bottom: 1px dotted #ccc;padding-left: 25px;font-family: 'Noto Sans TC', sans-serif;}
+.product-layer-two li:hover > a , .product-layer-two li.active > a{color: #28823c;}
+.product-layer-two li:hover > a:before , .product-layer-two li.active > a:before {background:#28823c; color:#fff;}
+.product-layer-two > li > a:before {
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 18px;
+    content: "＞";
+    color: #ADA17E;
+    background: #f2f2f2;
+    width: 18px;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s;
+    padding-left: 2px;
+    font-size: 13px;
+}
+/**/
+.product-layer-two li ul {    position: relative;padding-top: 1px;}
+.product-layer-two li li {    border: none;background: transparent;}
+.product-layer-two li li a{    background: transparent;}
+.product-layer-two li li:hover a{color: #8ec21f;}
+
+/*hover到才顯示副選單 關掉↓*/
+.product-layer-two li li {    display: block;}
+
+/*購物車/內層＝＝*/
+.product_info_page .show_content{width: 100%;max-width: 70%; margin:0 auto;}
+.product_info_page .main_part {width: 90%;}
+.product_pic,.product_info,.toShare,ul.prod li h3.prod-thumb,.prod_related h6,.qaform,.related_list{ display:none;}
+.prod_related{background: transparent;}
+.sidebarBtn{text-align:center;border: none;width: 100%;}
+.sidebarBtn h2{color: #494645;font-size: 30px;    font-family: 'Noto Serif TC', serif; text-align:center;letter-spacing: 4px;}
+.lastPage{background: #9f9f9f;}
+.product_info_page .n-photo img{ width:100%;}
+
+
+
+
+/*文章管理/＝＝＝＝＝*/
+h4.blog_category_title { font-size: 30px; font-family: 'Noto Serif TC', serif;letter-spacing: 3px;font-weight: 600;margin-bottom:0;padding: 0;}
+h4.blog_category_title span{font-size: 24px;}
+/*文章管理/外層＝＝*/
+.module_i_news ul, .blog_subbox {display: grid;gap: 30px;}
+.module_i_news li , .subbox_item {width: 100%;background: #ffffff;box-shadow: 1px 1px 3px 1px #dadada;}
+.module_i_news li a , .subbox_item a {padding: 8px;}
+.module_i_news li a:after , .subbox_item a:after{pointer-events:none; }
+.i_blog_le, .i_blog_ri , .blog_list_le , .blog_list_ri {    width: 100%;}
+.i_blog_le , .blog_list_le{    position: relative;    padding-bottom: 100%;    height: 0;}/*文章縮圖長寬比例，100% →100:100 = 1:1 正方形 */
+.i_blog_le img , .blog_list_le img{display:block;  max-width: 100%; min-width: 100%; min-width: 100%; height: 100%;  object-fit: cover; -moz-object-fit: cover;  -ms-object-fit: cover; -o-object-fit: cover; -webkit-object-fit: cover; position: absolute;   left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.blog_list_ri p{-webkit-line-clamp: 2;letter-spacing: 1px;}
+.blog_list_ri{padding: 20px 10px 30px 10px;}
+.blog_list_ri h5{font-family: 'Noto Serif TC', serif; color: #4d4d4d;letter-spacing: 2px;}	
+.blog_le{width: 16%;}
+.blog_ri{width: calc(100% - 224px);padding: 0 0 110px 50px;}
+/*有一條效果*/
+.subbox_item a:hover:after {  width: 100%; }
+.subbox_item a:after {content: "";position: absolute; top: 98%; left: 0; width: 40px;opacity: 1;border: none;border-bottom: 2px #8ec21f solid;}
+      
+
+/*側邊*/
+.blog_le .accordion > li{transition:all 0.3s;}
+.blog_le .accordion > li:hover, .blog_le .accordion > li.on_this_category {    background: #28823c !important;}
+.submenu a:hover {    background: #28823c;}
+/*首頁文章*/
+.module_i_news ul{width: 100%;max-width: 75%;grid-template-columns:1fr 1fr 1fr 1fr;}
+.module_i_news .title_i_box h4{font-family: 'Noto Serif TC', serif;   font-size: 38px; font-weight: 600; color: #4d4d4d; letter-spacing: 5px;order: 1;}
+.module_i_news .title_i_box h6:before {font-size: 22px;content: 'HEALTH EDUCATION';font-family: 'Arial'; color: #267F39; font-weight: normal;letter-spacing: 3px;}
+.module_i_news .title_i_box h6{order: 2;}  
+.module_i_news .title_i_box{display: flex;flex-direction: column;}
+.i_blog_ri p{-webkit-line-clamp: 2;letter-spacing: 1px;}
+.i_blog_ri h5{font-family: 'Noto Sans TC', sans-serif;color: #4d4d4d;letter-spacing: 2px;}
+ 
+/*功*/
+.blog_subbox{grid-template-columns:1fr 1fr 1fr;}
+.blog_subbox:before{content:none;}
+/*文章管理/內層＝＝*/
+.blog_back a.article_btn_back{background:#a3c5ac;}
+.blog_back a.article_btn_next{background: #ccc;}
+.blog_back a.article_btn_prev{background: #ccc;}
+.blog_box_edit{width: 100%;max-width: 95%;}
+
+
+
+
+
+
+
+
+
+/*相簿/＝＝＝＝＝*/
+/*作品展示*/
+.work_page .main_part , .work_class_page .main_part, .work_info_page .main_part{    max-width: 1400px; width: 90%;    margin: 0 auto;}
+/*相簿管理*/
+.album_page .main_part , .album_class_page .main_part, .album_info_page .main_part{    max-width: 1400px; width: 90%;    margin: 50px auto 0 auto;}
+/*版面*/
+ul.show-list, .other_subalbum, ul.pic-list {    display: grid;    grid-template-columns: 1fr 1fr 1fr;    gap: 20px;}
+ul.show-list:before , ul.pic-list:before{content:none;}
+.overlay {    z-index: 1;}
+.show-list .item , .other_subalbum li , .pic-list .item{width: 100%;margin:0;padding:5px;}
+.show-list .show_pic , .other_subalbum li a div , .pic-list .show_pic{    display: block;    position: relative;    overflow: hidden;    height: 0;}
+.show-list .show_pic , .other_subalbum li a div , .pic-list .show_pic    {    padding-bottom: 75%;}/*相簿圖片長寬比例，75% →100:75 = 4:3 */
+.show-list .show_pic img , .other_subalbum li a img, .pic-list .show_pic img{
+	display:block;
+    max-width: 100%;
+    min-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -moz-object-fit: cover;
+    -ms-object-fit: cover;
+    -o-object-fit: cover;
+    -webkit-object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);}
+
+.show-list .item:hover .show_name {    color: #ADA17E;}
+.other_album_choice li {    background: #ADA17E;}
+.subalbum-menu h2{    color: #cbc0a0;font-size: 24px;}
+.other_subalbum li p {    margin-top: 10px;}
+/**/
+
+/*促銷方案/＝＝＝＝＝*/
+.news_part {width: 100%;max-width: 75%;}
+.news_list ul li a:hover {    background: #f9f9f9;}
+.news_list ul li p:after {    background:#a3c56a;    padding: 3px 5px;    border-radius: 5px;    color: #fff;}
+.news_list ul li p{color: #212121;}
+.promotions_page .other_promotion .pmtTime{width:100%;}
+.promotions_page .other_promotion li a{padding: 30px;height: 150px;     display: flex;    justify-content: center;    align-items: center;}
+.promotions_page .other_promotion li a:hover:before , .other_promotion li a:hover:after {border-color:#8ec21f;}
+.promotions_page .pmtTitle {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.promotions_page .other_promotion li{position: relative;}
+.promotions_page .other_promotion .pmtTime span{ display: none;}
+.promotions_page .pmtTitle span{ display: none;}
+
+.promotions_page .other_promotion .clearfix {
+    padding: 3% 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #f7fcf6;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.promotions_page .other_promotion li {
+    width: 27%;
+}
+.promotions_page .other_promotion{
+	padding: 3% 0;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #f7fcf6;
+    align-items: center;
+    flex-wrap: wrap;
+	
+}
+.promotions_page .other_promotion li a:after{
+	
+	border: none;
+}
+
+.promotions_page .promotion_title {
+    width: 100%;
+    max-width: 60%;
+    margin: 0 auto;
+}
+.promotions_page .edit{
+	width: 100%;
+	max-width: 60%;
+	 margin: 0 auto;
+}
+.promotions_page .promotion_title h2 {
+    font-family: 'Noto Serif TC', serif;
+    width: 100%;
+    font-size: 32px;
+    letter-spacing: 3px;
+}
+.promotions_page .other_promotion li a:hover {
+    background: #f0f5e5;
+}
+
+
+
+
+/*分享文章*/
+
+.share_page .promotion_title{position: relative;}
+.share_page .promotion_title em{ display:none;}
+.share_page .other_promotion .pmtTime span{ display:none;}
+.share_page .other_promotion .pmtTime cite{ display:none;}
+.share_page .promotion_title span{ display:none;}
+.share_page .promotion_title:before {
+    content: "";
+    width: 29px;
+    height: 29px;
+    position: absolute;
+    background: url(https://pic03.eapple.com.tw/anderson/ser-icon1.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation-name: oxxo;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in-out;
+	animation-direction: alternate-reverse;
+	animation-duration: 0.8s;
+    left: -44px;
+    top: 0%;
+}
+@keyframes oxxo{
+		0% {
+   			transform: translateY(5px);
+		}
+		100% {
+   			transform: translateY(13px);
+		}
+	}
+	
+.share_page .promotion_title h2{font-family: 'Noto Serif TC', serif;width: 100%;font-size: 32px;letter-spacing: 3px;}
+.share_page .clearfix { padding: 3% 0;margin: 0 auto; width: 100%;     max-width: 100%;display: flex;    justify-content: center;background: #f7fcf6;align-items: center;    flex-wrap: wrap;}
+.share_page .promotion_title { max-width: 63%; margin: 0 auto;}	
+
+
+	
+
+/*聯絡我們/＝＝＝＝＝*/
+.contact_page .main_part{max-width: 100%;padding: 0 0;}
+.contact_page .contact_content{padding: 0 0;}
+.contact_page .information_left, .information_right{padding: 0 0;}
+.contact_le_map a { background: #1c7233;}
+.contact_form li{padding: 8px 0;}
+.contact_form li.last cite {background: #1c7233;}
+.contact_content .information_left{ width: 100%;}
+.contact_content .information_right{width:100%;padding-left: 0px;margin: 0 auto; max-width:60%;display: block;}
+.contact_page input{margin: 0 10px;}
+.contact_form{width: 100%;}
+.contact_form li .form__insert{  font-size: 17px;}
+.contact_form li .form__label{width: 100%;text-align: left;    margin-left: 0;    font-size: 17px;    font-weight: bold;    margin-bottom: 10px;}
+.blank_letter{font-family:'Noto Sans TC', sans-serif;font-size: 28px;letter-spacing: 3px;font-weight: 500;color: #222; text-align:center;font-weight: 500;}
+.list_before{margin-top: 0;margin-bottom: 0;}
+.list_before.info li:nth-child(1),.list_before.info li:nth-child(2),.list_before.info li:nth-child(3),.blank_letter.i{ display:none;}
+.blank_letter{padding-top: 0;}
+
+
+.fa-line:before{color: #ffffff;}
+
+/*會員/＝＝＝＝＝*/
+.send_simple{background-color: #ADA17E;}
+.rewrite_simple{background-color: #cbc0a0;}
+.member_title p {    border-top: 2px #ADA17E solid;}
+.login_mem_submit{background: #ADA17E;}
+.login_mem_other_link a{color: #ADA17E;}
+.member_login_regist a{background: #ADA17E;}
+.mem_regist_title_s {    background: #cbc0a0;    color: #fff;}
+
+
+/*RWD1280/＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+@media screen and (max-width: 1280px) {
+.pageIndex .header_area{position: relative;}	
+
+
+/*文章*/
+.blog_page .main_part, .blog_in_page .main_part {
+    max-width: 90%;
+    padding: 0 20px;
+}
+.blog_le {
+    width: 20%;
+}
+.module_i_news {
+    padding: 0 20px;
+    margin: 0 0 7% 0;
+}
+.module_i_news ul{
+	max-width: 90%;
+}
+
+
+/*購物車/＝＝＝＝＝*/
+.products-list {    grid-template-columns: 1fr 1fr 1fr;}
+
+.pageIndex  #content_main {
+    background-size: cover;
+    background-attachment: initial;
+}
+/*下拉*/
+.other_select_page .promotion_title :before{left: 16%;}
+.other_select_page .other_promotion li a:before{    content: url(https://pic03.eapple.com.tw/anderson/function-icon-s.png);}
+
+/*聯絡我們*/
+.contact_content .information_right{max-width: 65%;}
+}
+
+/*RWD1024/＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+@media screen and (max-width: 1024px) {
+/*Header/＝＝＝＝＝*/
+.navigation {padding: 10px;}
+.main_header_area{height: auto;}
+.header_area.sticky >.main_header_area {height: auto;}
+.header_area{position: relative;}
+/*Logo/＝＝＝＝＝*/
+
+
+
+/*文章管理/＝＝＝＝＝*/
+.module_i_news ul{grid-template-columns:1fr 1fr;}
+.blog_subbox {
+    grid-template-columns: 1fr 1fr;
+}
+.blog_le {
+    width: 25%;
+}
+.path p{
+	width: 100%;
+    max-width: 100%;
+}
+.module_i_news .title_i_box{
+	margin-bottom: 90px;
+}
+.module_i_news ul {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.module_i_news .title_i_box h6:before {
+    letter-spacing: 4px;
+	font-weight: 400;
+}
+
+/*購物車/＝＝＝＝＝*/
+.product_page .products-list {    grid-template-columns: 1fr 1fr;}
+
+/*頁腳*/
+.footer_menu{grid-template-columns: repeat(auto-fit, minmax(min(70px,100%), 1fr));}
+
+}
+
+/*RWD980/＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+@media screen and (max-width: 980px) {
+/*文章管理/＝＝＝＝＝*/
+.blog_subbox{grid-template-columns:1fr 1fr;}
+
+/*夏拉*/
+.other_select_page .promotion_title{max-width: 80%;}
+.other_select_page .promotion_title :before {
+    left: 6%;
+}
+.other_select_page .n-center {
+    max-width: 80%;
+}
+
+/*相簿/＝＝＝＝＝*/
+ul.show-list , .other_subalbum ,ul.pic-list{    display: grid;    grid-template-columns: 1fr 1fr;}
+
+
+/*最新消息*/
+.promotions_page .promotion_title{max-width: 80%;}
+.promotions_page .edit{max-width: 80%;}
+
+/*文章*/
+.module_i_news ul {
+	max-width: 80%;
+    grid-template-columns: 1fr 1fr ;
+}
+
+
+
+
+
+}
+
+/*RWD768/＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+@media screen and (max-width: 768px) {
+/*選單漸變效果＝＝*/
+/*首頁固定選單*/
+.pageIndex .header_area{position:relative;}
+.header_area .main_header_area .container{ max-width: 100%;}
+/*抬頭*/	
+.stellarnav .menu-toggle {
+    padding: 34px 10px;
+}
+
+/*側邊選單/＝＝＝＝＝*/
+.stellarnav li li > a , .stellarnav li li.has-sub > a{    padding: 10px;border-left:none;}
+.stellarnav li li:hover > a , .stellarnav li li.has-sub:hover > a{padding: 10px;border-color:transparent;}
+
+/*Logo/＝＝＝＝＝*/
+.nav-brand{ margin-top: 10px;}
+
+
+/*Footer/＝＝＝＝＝*/
+#to_top { bottom:60px;}
+#bottom_menu {display: block; }
+.footer.with_shopping_mode { padding:30px 0 70px; }
+.footer_info {justify-content: center;}
+.footer_logo {text-align: center;}
+.footer_menu {display: grid;    grid-template-columns: repeat(auto-fit, minmax(min(80px,100%), 1fr));    gap: 5px;}
+#bottom_menu .fa-brands.fa-line:before{color: #555555;}
+
+
+
+
+/*首頁最新消息*/
+.news_part {
+    width: 100%;
+    max-width: 90%;
+}
+
+
+
+/*購物車/＝＝＝＝＝*/
+.product_info_page .show_content{max-width: 90%;}
+.products-list {    grid-template-columns: 1fr 1fr;}
+.product_page .products-list ,.product-layer-two {    width:100%;}
+.prod_related h6 span:before{font-size: 24px;}
+.product_info_page .mobile_product_name{ display:none;}
+
+/*順序*/
+.product_page .products-list {    order: -1;}
+
+/*文章管理/＝＝＝＝＝*/
+h4.blog_category_title{font-size: 24px;}
+h4.blog_category_title span{font-size: 20px;}
+.blog_le { width: 100%;}
+.blog_ri {
+    width: 100%;
+    padding: 0 0 60px 0;
+}
+.blog_page .main_part, .blog_in_page .main_part {
+    max-width: 90%;
+    padding: 0 0 80px 0;
+}
+
+
+
+/*相簿/＝＝＝＝＝*/
+.mobile_product_name{font-size: 20px;}
+.subalbum-menu h2{    color: #cbc0a0;font-size: 20px;}
+
+
+
+
+
+}
+
+/*RWD600/＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+@media screen and (max-width: 600px) {
+/*抬頭*/	
+.stellarnav .menu-toggle {
+    padding: 34px 10px;
+}	
+	
+/*Footer/＝＝＝＝＝*/
+.box_link {    text-align: center;}
+
+/*Banner/＝＝＝＝＝*/	
+.banner{background-position-x: 20%;}
+.banner h5::before{top: -100%;}	
+.banner h5{font-size: 24px;}
+
+/*購物車/＝＝＝＝＝*/
+.prod_related h6 span:before{font-size: 20px;}
+
+
+/*文章管理/＝＝＝＝＝*/
+.module_i_news ul , .blog_subbox{grid-template-columns:1fr;}
+/* .i_blog_le, .blog_list_le {    padding-bottom: 75%;} */
+h4.blog_category_title{font-size: 20px;}
+h4.blog_category_title span{font-size: 18px;}
+.blog_le{width: 100%;}
+.blog_ri{width: 100%;padding: 0;}
+
+.module_i_news .title_i_box h6:before {
+    letter-spacing: 4px;
+    font-weight: 400;
+}
+
+/*夏拉*/
+.other_select_page .other_promotion li a:before {
+    content: url(https://pic03.eapple.com.tw/anderson/function-icon-m.png);
+}
+.other_select_page .other_promotion li{width: 100%;margin-left: 0;    overflow: hidden;}
+.other_select_page .n-center{max-width: 80%;}
+.other_select_page .promotion_title{max-width: 80%;}
+.other_select_page .promotion_title :before{left: 4%;}
+
+
+/*促銷*/
+.promotions_page .other_promotion li a:before {    
+	content: url(https://pic03.eapple.com.tw/anderson/new-icon-m.png);
+}
+
+
+
+/*相簿/＝＝＝＝＝*/
+ul.show-list , .other_subalbum ,ul.pic-list{    display: grid;    grid-template-columns: 1fr;}
+.mobile_product_name{font-size: 18px;}
+.subalbum-menu h2{    font-size: 18px;}
+
+/*促銷方案/＝＝＝＝＝*/
+.news_list ul li p:after {    width: fit-content;    margin: 10px auto 0;}
+.promotions_page .other_promotion li {
+    width: 100%;
+}
+
+
+
+/*聯絡我們*/
+.contact_content .information_right{max-width: 80%;}
+.contact_form li.last blockquote, .contact_form li.last cite{width: 49%;}
+
+
+}
+@media screen and (max-width: 480px) {
+.module_i_news ul, .blog_subbox{    margin: 0 auto 30px auto;}
+.pageIndex .animated-arrow {  margin: 0 0 12% 0;}
+.product_page .products-list {
+    grid-template-columns: 1fr;
+}
+.product_page .main_part {
+    width: 100%;
+    max-width: 85%;
+}
+.blog_page .main_part, .blog_in_page .main_part {
+    max-width: 85%;
+    padding: 0 0 80px 0;
+}  
+.module_i_news .title_i_box {
+    margin-bottom: 40px;
+}
+.module_i_news .title_i_box h6:before{
+	font-size: 20px;
+}
+	
+
+}
+/*RWD375/＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝*/
+@media screen and (max-width: 375px) {
+/*購物車/＝＝＝＝＝*/
+.products-list , .product_page .products-list  {    grid-template-columns: 1fr;}
+
+/*夏拉*/
+.contact-link p {
+    width: 100% !important;
+}
+
+.contact-link { flex-direction: column !important;}
+
+}
+
+/* footer */
+.footer_info li p.ex_p{
+    padding-left: 15px;
+    position: relative;
+  }
+  
+  .footer_info li p.ex_p::before{
+    content:"";
+    width: 7px;
+    height: 7px;
+    background: #fff;
+    border-radius: 150px;
+    position: absolute;
+    top:8px;
+    left: 0;
+  }
+  
