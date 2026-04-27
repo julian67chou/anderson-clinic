@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>最新消息 - 安生診所-雙心門診</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@300;400;500;600;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/normalize.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+.news-item { background:#fff; border-radius:12px; padding:20px; margin-bottom:15px; box-shadow:0 2px 10px rgba(0,0,0,.06); transition:all .3s; cursor:pointer; }
+.news-item:hover { box-shadow:0 4px 20px rgba(0,0,0,.1); }
+.news-item h3 { font-size:18px; color:#333; margin:0 0 8px; line-height:1.4; }
+.news-item .date { font-size:13px; color:#999; }
+.news-item .summary { font-size:14px; color:#666; margin-top:8px; line-height:1.6; }
+.news-detail { display:none; background:#f9f9f9; border-radius:12px; padding:30px; margin-bottom:15px; line-height:1.8; }
+.news-detail.show { display:block; }
+.news-detail p { font-size:15px; color:#555; margin:0 0 15px; }
+.back-link { display:inline-block; color:#267F39; font-size:14px; margin-bottom:15px; cursor:pointer; }
+.back-link:hover { text-decoration:underline; }
+@media (max-width:768px) { .news-item { padding:15px; } }
+</style>
+</head>
+<body>
+<div id="page">
+<header class="header_area">
+  <div class="main_header_area animated">
+    <div class="container">
+      <nav id="navigation1" class="navigation">
+        <div class="nav-header">
+          <a class="nav-brand" href="index.html"><img src="assets/img/logo.png" alt="安生診所"></a>
+        </div>
+        <div class="stellarnav">
+          <ul>
+            <li><a href="about.html">門診介紹</a></li>
+            <li><a href="services.html">服務項目</a></li>
+            <li><a href="news.html">最新消息</a></li>
+            <li><a href="courses.html">特色療程</a></li>
+            <li><a href="index.html">國際醫療</a></li>
+            <li><a href="index.html">衛教專區</a></li>
+            <li><a href="contact.html">聯絡資訊</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<div class="page-banner" style="background:linear-gradient(135deg,#267F39 0%,#0A4D26 100%);padding:80px 5%;text-align:center;">
+  <h1 style="font-family:'Noto Serif TC',serif;font-size:42px;color:#fff;margin:0;letter-spacing:.15em;">最新消息</h1>
+  <p style="font-family:Arial,sans-serif;font-size:18px;color:#8EC31B;margin:10px 0 0;">NEWS</p>
+</div>
+
+<div id="content_main">
+
+  <!-- 主分類導航 -->
+  <div style="max-width:900px;margin:30px auto 0;padding:0 20px;display:flex;gap:10px;flex-wrap:wrap;">
+    <span style="background:#267F39;color:#fff;padding:8px 20px;border-radius:20px;font-size:14px;cursor:default;">全部</span>
+    <span style="background:#f0f0f0;color:#666;padding:8px 20px;border-radius:20px;font-size:14px;cursor:default;">健康管理</span>
+    <span style="background:#f0f0f0;color:#666;padding:8px 20px;border-radius:20px;font-size:14px;cursor:default;">心臟健康</span>
+    <span style="background:#f0f0f0;color:#666;padding:8px 20px;border-radius:20px;font-size:14px;cursor:default;">瘦身方案</span>
+    <span style="background:#f0f0f0;color:#666;padding:8px 20px;border-radius:20px;font-size:14px;cursor:default;">癌病整合</span>
+  </div>
+
+  <section style="max-width:900px;margin:30px auto;padding:0 20px;">
+
+    <!-- 消息1：益生菌 -->
+    <div class="news-item" onclick="toggleDetail('d1')">
+      <div class="date">2026-04-24</div>
+      <h3>你吃的益生菌真的適合你嗎?</h3>
+      <div class="summary">你知道腸道是眾多免疫細胞聚集的地方嗎？令人感到驚訝的是，70%的免疫細胞是在腸道內生成的...</div>
+    </div>
+    <div id="d1" class="news-detail">
+      <span class="back-link" onclick="toggleDetail('d1')">← 返回列表</span>
+      <h2 style="font-family:'Noto Serif TC',serif;font-size:24px;color:#267F39;margin:10px 0 20px;">你吃的益生菌真的適合你嗎?</h2>
+      <p><strong>日期：</strong>2026-04-24</p>
+      <p>你知道腸道是眾多免疫細胞聚集的地方嗎？令人感到驚訝的是，70%的免疫細胞是在腸道內生成的，其中大多數集中於大腸黏膜。由於人體是由嘴巴、食道、胃、腸接連而成的管狀構造，因此除了食物之外，病原體也會進入體內。為了防堵這些外敵入侵，腸道就成了最大的免疫器官。</p>
+      <p>早上空腹及睡前是最佳時間，活性益生菌需與腸道表皮細胞結合才能發揮功能，晚上睡覺時是腸道最穩定的狀態，因此睡前與白天起床空腹時食用效果最好。</p>
+      <p>高溫、潮濕都會使菌數衰減，保存溫度越低，存放期限越長，放置在室溫可保存1個月，4℃冷藏可保存2年，-20℃冷凍可保存5年。</p>
+      <p>益生菌的營養來源是益生元（prebiotics），多半屬於膳食纖維，例如半乳寡糖、果寡糖、難消化糊精等，這些人體難以使用的醣類剛好可以提供益生菌生長所需的能量，因此食用益生菌後需再補充益生元或膳食纖維，效果更佳。</p>
+      <p>益生菌在腸道建立優勢菌種時間過程約需3個月，為了重整腸道環境並排除有害菌和毒素，必須定期食用，不可間隔太久，避免好菌流失，吃愈久功效就愈佳。</p>
+    </div>
+
+    <!-- 消息2：母親節 -->
+    <div class="news-item" onclick="toggleDetail('d2')">
+      <div class="date">2026-04-17</div>
+      <h3>母親節，送健康最實在｜安生診所母親節限定專案</h3>
+      <div class="summary">母親節即將到來，安生診所特別推出母親節健康專案，送媽媽一份最實在的健康禮物...</div>
+    </div>
+    <div id="d2" class="news-detail">
+      <span class="back-link" onclick="toggleDetail('d2')">← 返回列表</span>
+      <h2 style="font-family:'Noto Serif TC',serif;font-size:24px;color:#267F39;margin:10px 0 20px;">母親節，送健康最實在｜安生診所母親節限定專案</h2>
+      <p>母親節即將到來，今年送什麼最有心意？</p>
+      <p>安生診所特別推出母親節限定健康專案，從全身健康風險評估、營養點滴到自律神經檢測，讓媽媽從內到外真正感受被照顧的溫暖。</p>
+      <p>活動期間：即日起至2026年5月31日</p>
+      <p>詳情請洽診所或LINE預約諮詢：@andersonclinic</p>
+    </div>
+
+    <!-- 消息3：心臟健康六 -->
+    <div class="news-item" onclick="toggleDetail('d3')">
+      <div class="date">2026-03-25</div>
+      <h3>心臟健康專欄（六）動脈硬化與周邊血管疾病</h3>
+      <div class="summary">動脈硬化是血管隨著脂肪堆積與慢性發炎而逐漸變硬、變窄的過程。血管健康決定全身健康...</div>
+    </div>
+    <div id="d3" class="news-detail">
+      <span class="back-link" onclick="toggleDetail('d3')">← 返回列表</span>
+      <h2 style="font-family:'Noto Serif TC',serif;font-size:24px;color:#267F39;margin:10px 0 20px;">心臟健康專欄（六）動脈硬化與周邊血管疾病</h2>
+      <p>動脈硬化是血管隨著脂肪堆積與慢性發炎而逐漸變硬、變窄的過程。</p>
+      <p>血管健康決定全身健康。當動脈硬化發生在周邊血管時，可能導致下肢血液循環不良，出現間歇性跛行、腳部冰冷等症狀，嚴重時甚至可能導致組織壞死。</p>
+      <p>透過EECP體外反搏療法、靜脈雷射及營養點滴等整合治療，可有效改善血管功能，促進側支循環建立，為血管健康提供全方位照護。</p>
+    </div>
+
+    <!-- 消息4：瘦身 -->
+    <div class="news-item" onclick="toggleDetail('d4')">
+      <div class="date">2026-03-20</div>
+      <h3>安心瘦方案 猛健樂（Mounjaro）漸進式健康管理</h3>
+      <div class="summary">專業醫療級減重設計，採用新一代減重趨勢—猛健樂（Tirzepatide）透過雙重腸泌素機制...</div>
+    </div>
+    <div id="d4" class="news-detail">
+      <span class="back-link" onclick="toggleDetail('d4')">← 返回列表</span>
+      <h2 style="font-family:'Noto Serif TC',serif;font-size:24px;color:#267F39;margin:10px 0 20px;">安心瘦方案 猛健樂（Mounjaro）漸進式健康管理</h2>
+      <p>專業醫療級減重設計，採用新一代減重趨勢—猛健樂（Tirzepatide），透過雙重腸泌素機制幫助：</p>
+      <p>．抑制食慾，降低過度進食<br>．延長飽足感，自然減少熱量攝取<br>．改善血糖代謝，促進健康減重</p>
+      <p>配合醫師個人化評估與營養指導，達到安全有效的體重管理目標。</p>
+    </div>
+
+    <!-- 消息5：心臟健康五 -->
+    <div class="news-item" onclick="toggleDetail('d5')">
+      <div class="date">2026-03-16</div>
+      <h3>心臟健康專欄（五）瓣膜性心臟病</h3>
+      <div class="summary">心臟內共有四個瓣膜，負責控制血液單向流動，如同開關門的機制...</div>
+    </div>
+    <div id="d5" class="news-detail">
+      <span class="back-link" onclick="toggleDetail('d5')">← 返回列表</span>
+      <h2 style="font-family:'Noto Serif TC',serif;font-size:24px;color:#267F39;margin:10px 0 20px;">心臟健康專欄（五）瓣膜性心臟病《心臟的「門」出現問題》</h2>
+      <p>心臟內共有四個瓣膜，負責控制血液單向流動，如同開關門的機制。</p>
+      <p>當瓣膜出現狹窄或閉鎖不全時，心臟需要更費力地將血液打出，長期下來可能導致心臟擴大、心律不整甚至心臟衰竭。</p>
+      <p>定期進行心臟超音波檢查，搭配適當的營養補充與生活型態調整，是瓣膜性心臟病預防與管理的重要關鍵。</p>
+    </div>
+
+  </section>
+
+</div>
+
+<footer class="footer with_shopping_mode">
+  <div class="center">
+    <div class="footer_info">
+      <div class="footer_logo"><a href="index.html"><img src="assets/img/logo.png" alt="安生診所"></a></div>
+      <ul>
+        <li><p class="tel">03-3270292</p><p class="add">桃園市龜山區文化二路28-5號2樓</p></li>
+        <li><p class="ex_p">免責聲明：安生診所提醒您，本網站內容僅供參考，任何治療效果皆因個人而有所不同，建議須由醫師當面與您溝通並進行診斷評估為宜，謝謝</p></li>
+      </ul>
+    </div>
+  </div>
+  <p class="copy">Copyright © 2026 安生診所 All Rights Reserved.</p>
+</footer>
+
+</div>
+<a id="to_top" class="to_top" href="#"><i class="top-icon">↑</i>TOP</a>
+<ul id="bottom_menu" class="clearfix with_shopping_mode">
+  <li><a href="index.html"><span>🏠</span><em>回首頁</em></a></li>
+  <li><a href="tel:03-3270292"><span>📞</span><em>電話</em></a></li>
+  <li><a href="https://line.me/ti/p/~@andersonclinic"><span>💬</span><em>LINE</em></a></li>
+</ul>
+<script src="assets/js/jquery-1.11.3.min.js"></script>
+<script>
+function toggleDetail(id) {
+  var detail = document.getElementById(id);
+  detail.classList.toggle('show');
+  if(detail.classList.contains('show')) {
+    setTimeout(function(){ detail.scrollIntoView({behavior:'smooth', block:'start'}); }, 100);
+  }
+}
+$(function(){$('#to_top').on('click',function(e){e.preventDefault();$('html,body').animate({scrollTop:0},600);});
+var $n=$('.stellarnav');var $t=$('<button class="nav-toggle">☰</button>');$('.nav-header').append($t);
+$t.on('click',function(){$n.slideToggle(300);$(this).text($n.is(':visible')?'✕':'☰');});
+$(window).on('resize',function(){if($(window).width()>968)$n.show();});});
+</script>
+</body>
+</html>
